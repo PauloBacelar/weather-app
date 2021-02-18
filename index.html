@@ -18,26 +18,37 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
   </head>
 
   <body>
     <!-- Weather Card -->
     <div id="weather-card">
-      <div class="temperature-div">
-        <h1 id="tempearture">London, GB</h1>
+      <div class="place-div">
+        <h1 id="place">London, GB</h1>
       </div>
 
-      <div class="icon-div">
+      <div id="temperature-div">
+        <h2 id="temperature"><span>0.00</span>º<span id="unit">C</span></h2>
+      </div>
+
+      <div id="icon-div">
         <img src="" id="icon" />
-        <p id="description"></p>
+        <h3 id="description"></h3>
       </div>
 
-      <hr />
-      <p>Allow access to your localization</p>
+      <div id="bottom">
+        <hr />
+        <p>Allow access to your localization</p>
+      </div>
     </div>
 
     <!-- JS Links -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="show-london-weather.js"></script>
+    <script src="show-local-weather.js"></script>
+    <script src="change-unit.js"></script>
   </body>
 </html>
