@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- Title -->
+    <title>Weather App</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+
+  <body>
+    <!-- Weather Card -->
+    <div id="weather-card">
+      <div class="temperature-div">
+        <h1 id="tempearture">London, GB</h1>
+      </div>
+
+      <div class="icon-div">
+        <img src="" id="icon" />
+        <p id="description"></p>
+      </div>
+
+      <hr />
+      <p>Allow access to your localization</p>
+    </div>
+
+    <!-- JS Links -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
