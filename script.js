@@ -14,7 +14,7 @@ if (navigator.geolocation) {
     (position) => {
       lat = position.coords.latitude;
       long = position.coords.longitude;
-      const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=b201157d2845f79ad6e02f582e930d6f`;
+      const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=b201157d2845f79ad6e02f582e930d6f`;
 
       fetch(api)
         .then((response) => {
@@ -23,12 +23,12 @@ if (navigator.geolocation) {
         .then((position) => {
           temperature.textContent = `${Math.round(position.main.temp)} ºC`;
           place.textContent = `${position.name}, ${position.sys.country}`;
-          icon.src = `http://openweathermap.org/img/wn/${position.weather[0].icon}@2x.png`;
+          icon.src = `https://openweathermap.org/img/wn/${position.weather[0].icon}@2x.png`;
           weatherDescription.textContent = `${position.weather[0].description}`;
         });
     },
     () => {
-      const api = `http://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=b201157d2845f79ad6e02f582e930d6f`;
+      const api = `https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=b201157d2845f79ad6e02f582e930d6f`;
 
       fetch(api)
         .then((response) => {
@@ -37,7 +37,7 @@ if (navigator.geolocation) {
         .then((position) => {
           temperature.textContent = `${Math.round(position.main.temp)} ºC`;
           place.textContent = `${position.name}, ${position.sys.country}`;
-          icon.src = `http://openweathermap.org/img/wn/${position.weather[0].icon}@2x.png`;
+          icon.src = `https://openweathermap.org/img/wn/${position.weather[0].icon}@2x.png`;
           weatherDescription.textContent = `${position.weather[0].description}`;
           couldNotAccess.classList.remove("hide");
         });
