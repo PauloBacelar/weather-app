@@ -1,18 +1,18 @@
 body,
 html {
-  height: 99%;
-  width: 99%;
+  height: 100%;
+  width: 100%;
   min-height: 400px;
   background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
   font-family: "Montserrat", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 #weather-card {
   text-align: center;
-  color: white;
   height: 400px;
 }
 
@@ -50,7 +50,6 @@ html {
 
 #weather-card {
   text-align: center;
-  color: white;
   height: 400px;
 }
 
@@ -78,4 +77,11 @@ img {
 
 #options-div {
   margin-top: 30px;
+}
+
+#footer {
+  margin-top: 100%;
+  height: 100px;
+  display: block;
+  background-color: red;
 }
