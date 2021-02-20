@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body,
 html {
   height: 99%;
@@ -35,3 +36,48 @@ img {
 h2 {
   margin-top: -10px;
 }
+=======
+body,
+html {
+  height: 99%;
+  width: 99%;
+  min-height: 400px;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#weather-card {
+  text-align: center;
+  color: white;
+  height: 400px;
+}
+
+#description {
+  margin-top: -10px;
+}
+
+#icon {
+  margin-top: -20px;
+}
+
+img {
+  margin-top: 10px;
+}
+
+.option,
+#unit {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+#options-div {
+  margin-top: 30px;
+}
+>>>>>>> a394d6203d82faa9f5d753a3ad0cd5dad8918935
